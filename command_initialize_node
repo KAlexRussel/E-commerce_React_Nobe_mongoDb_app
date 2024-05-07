@@ -14,3 +14,7 @@ in package.js change tsts under the script to start and the values to nodemon ap
 
 we install npm i mongoose for managing mongoDB
 
+this package require('crypto') is to hash passwords
+
+install uuid
+to create unique string for password
