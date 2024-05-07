@@ -4,7 +4,7 @@
   "description": "This is an E-commerce using react as front end , Node and mongo Db in the back end .",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
