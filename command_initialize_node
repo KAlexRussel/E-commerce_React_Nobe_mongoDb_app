@@ -1,0 +1,2 @@
+npm init -y//command is used to create a new Node.js project and automatically generate a package.json file
+npm i express dotenv nodemon //install packages
