@@ -1,2 +1,7 @@
 npm init -y//command is used to create a new Node.js project and automatically generate a package.json file
+
 npm i express dotenv nodemon //install packages
+
+we create a .gitignore file to ignore node_modules and .env files when sending the code to github
+
+we intialize the port where we run our node js server
