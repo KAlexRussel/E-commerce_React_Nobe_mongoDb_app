@@ -18,3 +18,7 @@ this package require('crypto') is to hash passwords
 
 install uuid
 to create unique string for password
+
+install body-parser and morgan
+
+we will store the user credentials in the cookie

@@ -1,6 +1,9 @@
 const express = require("express");
 // import express from "express"; es module
 const mongoose = require("mongoose");
+const morgan = require("morgan");
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
 require("dotenv").config();
 
 //import routes
@@ -11,6 +14,16 @@ const app = express();
 
 // db
 mongoose.connect(process.env.Database).then(() => console.log("DB connect"));
+
+// middlewares
+app.use(morgan("dev"));
+app.use(bodyParser.json());
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
+app.use(cookieParser());
 
 //routes middleware
 app.use("/api", useRoutes);
