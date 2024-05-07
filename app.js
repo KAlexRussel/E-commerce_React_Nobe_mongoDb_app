@@ -3,15 +3,17 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
+//import routes
+const useRoutes = require("./routes/user");
+
 // app
 const app = express();
 
 // db
 mongoose.connect(process.env.Database).then(() => console.log("DB connect"));
 
-app.get("/", (req, res) => {
-  res.send("hello from node update");
-});
+//routes middleware
+app.use("/api", useRoutes);
 
 const port = process.env.PORT || 8000;
 
