@@ -11,3 +11,6 @@ we need to setup the package,json tu use es module
 nodemon papckage is use to refresh the server live after any changes
 
 in package.js change tsts under the script to start and the values to nodemon app.js
+
+we install npm i mongoose for managing mongoDB
+
