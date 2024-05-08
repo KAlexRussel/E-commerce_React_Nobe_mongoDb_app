@@ -26,3 +26,5 @@ we will store the user credentials in the cookie
 dberrorhandler.js is a code to dsend good message when we received errors from the database
 
 we install express validator to manage the validation og input data // had a pb with the new version was forced to install the old version 5.3.1 but find in the documentation the new way of importing express validator
+
+install express-jwt and jsonwebtoken to store the token of the user
