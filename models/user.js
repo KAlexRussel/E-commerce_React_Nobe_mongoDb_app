@@ -2,8 +2,6 @@ const mongoose = require("mongoose");
 const crypto = require("crypto");
 // const uuidv1 = require('uuid/v1') this one is oudated
 const { v1: uuidv1 } = require("uuid");
-// const uuid = uuidv1();
-// console.log(uuid);
 
 const userSchema = new mongoose.Schema(
   {
@@ -40,7 +38,7 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// virtual filed
+// virtual fieled
 
 userSchema
   .virtual("password")
