@@ -32,3 +32,5 @@ install express-jwt and jsonwebtoken to store the token of the user
 install formidable to handle file upload
 
 install laodash is a helper package
+
+when you are trying to send form data remove contentype application design
